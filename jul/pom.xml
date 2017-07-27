@@ -6,18 +6,10 @@
         <artifactId>log-test</artifactId>
         <groupId>org.btlas</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>..</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>jcl</artifactId>
+    <artifactId>jul</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>1.2</version>
-        </dependency>
-    </dependencies>
 
 </project>
