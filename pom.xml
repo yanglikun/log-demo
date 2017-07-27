@@ -12,6 +12,7 @@
         <module>log4j</module>
         <module>logback</module>
         <module>jul</module>
+        <module>jcl</module>
     </modules>
 
     <build>
