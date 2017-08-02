@@ -6,22 +6,16 @@
         <artifactId>log-test</artifactId>
         <groupId>org.btlas</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>..</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>log4j</artifactId>
+    <artifactId>jcl-java</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>org.btlas</groupId>
-            <artifactId>log4j-java</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.btlas</groupId>
-            <artifactId>log4j-conf</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
         </dependency>
     </dependencies>
 
