@@ -11,11 +11,11 @@ public class MyAppSlf4j {
     static Logger logger = LoggerFactory.getLogger(MyAppSlf4j.class);
 
     public static void main(String[] args) {
-        logger.info("slf4j-main");
+        logger.info("logContent:{}", "slf4j-main");
         print();
     }
 
     public static void print() {
-        logger.info("slf4j-print");
+        logger.info("logContent:{}", "slf4j-print");
     }
 }

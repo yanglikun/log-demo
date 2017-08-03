@@ -16,11 +16,11 @@ public class MyAppJCL {
     }
 
     public static void main(String[] args) {
-        logger.info("jcl-main");
+        logger.info("logContent:jcl-main");
         print();
     }
 
     public static void print() {
-        logger.info("jcl-print");
+        logger.info("logContent:jcl-print");
     }
 }

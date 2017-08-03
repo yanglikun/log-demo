@@ -8,12 +8,11 @@ public class MyAppJUL {
     static Logger logger=Logger.getLogger("myLogger");
 
     public static void main(String[] args) {
-        logger.info((String) null);
-        logger.info("jul-main");
+        logger.info("logContent:jul-main");
         print();
     }
 
     public static void print() {
-        logger.info("jul-print");
+        logger.info("logContent:jul-print");
     }
 }

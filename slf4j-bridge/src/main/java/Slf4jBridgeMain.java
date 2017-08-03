@@ -1,6 +1,7 @@
 import com.github.yanglikun.jcl.MyAppJCL;
 import com.github.yanglikun.jul.MyAppJUL;
 import com.github.yanglikun.log4j.MyAppLog4j;
+import com.github.yanglikun.log4j2.MyAppLog4j2;
 import org.slf4j.bridge.SLF4JBridgeHandler;
 
 /**
@@ -18,6 +19,7 @@ public class Slf4jBridgeMain {
         MyAppJCL.print();
         MyAppJUL.print();
         MyAppLog4j.print();
+        MyAppLog4j2.print();
     }
 
 

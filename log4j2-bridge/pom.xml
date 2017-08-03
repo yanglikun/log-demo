@@ -9,26 +9,28 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>slf4j-bridge</artifactId>
+    <artifactId>log4j2-bridge</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.8.2</version>
         </dependency>
 
+        <!-- jcl bridge need-->
         <dependency>
             <groupId>org.btlas</groupId>
             <artifactId>jcl-java</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-jcl</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+
+        <!-- log4j1.x need -->
         <dependency>
             <groupId>org.btlas</groupId>
             <artifactId>log4j-java</artifactId>
@@ -41,38 +43,31 @@
             </exclusions>
         </dependency>
         <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-1.2-api</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+
+        <!-- jul need-->
+        <dependency>
             <groupId>org.btlas</groupId>
             <artifactId>jul-java</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-jul</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+        <!-- slf4j need -->
+        <dependency>
             <groupId>org.btlas</groupId>
-            <artifactId>log4j2-java</artifactId>
+            <artifactId>slf4j-java</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
-        <!-- jcl need-->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>1.7.25</version>
-        </dependency>
-        <!-- log4j1.x need-->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>log4j-over-slf4j</artifactId>
-            <version>1.7.25</version>
-        </dependency>
-        <!-- jul need-->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jul-to-slf4j</artifactId>
-            <version>1.7.25</version>
-        </dependency>
-        <!-- log4j2 need -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-to-slf4j</artifactId>
+            <artifactId>log4j-slf4j-impl</artifactId>
             <version>2.8.2</version>
         </dependency>
     </dependencies>

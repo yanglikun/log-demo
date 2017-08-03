@@ -8,11 +8,11 @@ public class MyAppLogback {
     static Logger logger = LoggerFactory.getLogger(MyAppLogback.class);
 
     public static void main(String[] args) {
-        logger.info("logback-main");
+        logger.info("logContent:{}","logback-main");
         print();
     }
 
     public static void print() {
-        logger.info("logback-print");
+        logger.info("logContent:{}","logback-print");
     }
 }
