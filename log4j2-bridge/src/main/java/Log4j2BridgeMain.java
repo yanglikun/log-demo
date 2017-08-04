@@ -15,8 +15,8 @@ public class Log4j2BridgeMain {
 
     public static void main(String[] args) {
         MyAppJCL.print();
-        MyAppLog4j.print();
         MyAppJUL.print();
+        MyAppLog4j.print();
         MyAppSlf4j.print();
     }
 
