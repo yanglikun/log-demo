@@ -19,7 +19,6 @@
 
         <module>log4j</module>
         <module>logback</module>
-        <module>slf4j</module>
         <module>slf4j-java</module>
         <module>slf4j-binding</module>
         <module>slf4j-bridge</module>
