@@ -23,7 +23,6 @@
         <module>slf4j-binding</module>
         <module>slf4j-bridge</module>
         <module>log4j2-java</module>
-        <module>log4j2-java</module>
         <module>log4j2-conf</module>
         <module>log4j2</module>
         <module>log4j2-async-conf</module>
