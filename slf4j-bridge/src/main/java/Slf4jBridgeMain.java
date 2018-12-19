@@ -10,8 +10,16 @@ import org.slf4j.bridge.SLF4JBridgeHandler;
 public class Slf4jBridgeMain {
 
     static {
-        //jul 需要显示安装 https://www.slf4j.org/api/org/slf4j/bridge/SLF4JBridgeHandler.html
+        installSLF4JBridgeHandler();
+    }
+
+    /**
+     * jul 需要显示安装 https://www.slf4j.org/api/org/slf4j/bridge/SLF4JBridgeHandler.html
+     */
+    private static void installSLF4JBridgeHandler() {
+        //移除JUL rootLogger的所有Handlers
         SLF4JBridgeHandler.removeHandlersForRootLogger();
+        //安装桥接的Handler
         SLF4JBridgeHandler.install();
     }
 
