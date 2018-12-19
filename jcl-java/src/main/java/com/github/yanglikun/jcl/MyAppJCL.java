@@ -10,7 +10,7 @@ public class MyAppJCL {
     static Log logger;
 
     static {
-        //诊断开关
+        //诊断开关,可以查看选择LogFactory和Log实现的过程
         //System.setProperty("org.apache.commons.logging.diagnostics.dest", "STDOUT");
         logger = LogFactory.getLog(MyAppJCL.class);
     }
