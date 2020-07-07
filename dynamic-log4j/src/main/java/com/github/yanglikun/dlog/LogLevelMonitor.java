@@ -50,7 +50,7 @@ public class LogLevelMonitor {
                     TimeUnit.SECONDS.sleep(1);
                     List<String> levelConfs = FileUtils.readLines(logLevelFile, "utf-8");
 
-                    //log4j2 特有的设置
+                    //log4j 特有的设置
                     for (int i = 0; i < levelConfs.size(); i++) {
                         String line = levelConfs.get(i);
                         if (StringUtils.isEmpty(line)) {
