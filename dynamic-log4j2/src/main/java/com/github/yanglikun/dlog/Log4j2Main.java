@@ -1,5 +1,6 @@
 package com.github.yanglikun.dlog;
 
+import com.github.yanglikun.common.logger.LogLevelChangeMonitor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,7 +15,7 @@ public class Log4j2Main {
     static Logger logger2 = LogManager.getLogger("com.test.mylogger2");
 
     public static void main(String[] args) throws InterruptedException {
-        LogLevelMonitor.start();
+        LogLevelChangeMonitor.startMonitor("loglevel.properties");
         for (; ; ) {
             logger1.info("log4j2动态日志logger1.info");
             logger2.debug("log4j2动态日志logger2.debug");
