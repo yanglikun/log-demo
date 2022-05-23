@@ -17,7 +17,7 @@ public class Slf4jBridgeMain {
      * jul 需要显示安装 https://www.slf4j.org/api/org/slf4j/bridge/SLF4JBridgeHandler.html
      */
     private static void installSLF4JBridgeHandler() {
-        //移除JUL rootLogger的所有Handlers
+        //移除JUL rootLogger的所有Handlers，要不然root下还有一个console handler，会输出到控制台
         SLF4JBridgeHandler.removeHandlersForRootLogger();
         //安装桥接的Handler
         SLF4JBridgeHandler.install();
@@ -29,6 +29,5 @@ public class Slf4jBridgeMain {
         MyAppLog4j.print();
         MyAppLog4j2.print();
     }
-
 
 }

@@ -31,6 +31,8 @@
         <module>dynamic-log4j2</module>
         <module>dynamic-log4j</module>
         <module>common</module>
+        <module>version-compatible</module>
+        <module>log4j2-bridge-war</module>
 
     </modules>
 

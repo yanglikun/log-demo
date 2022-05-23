@@ -19,4 +19,5 @@ public class MyAppJUL {
     public static void print() {
         logger.info("logContent:jul-print");
     }
+
 }

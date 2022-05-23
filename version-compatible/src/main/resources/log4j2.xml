@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<configuration>
+
+    <appenders>
+        <console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p - %C[%L] - [%t] - %m \n"/>
+        </console>
+    </appenders>
+
+    <Loggers>
+        <AsyncLogger name="com.github.yanglikun" level="info" includeLocation="true" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+        </AsyncLogger>
+
+        <Root level="info">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="ERROR"/>
+        </Root>
+    </Loggers>
+
+</configuration>
